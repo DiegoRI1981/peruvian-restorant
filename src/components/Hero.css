@@ -1,0 +1,23 @@
+.hero {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3bUORNJw4gBS8eqsux5uySmfz_-rKOElqKg&s")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0px 20px;
+  margin-top: 50px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+}

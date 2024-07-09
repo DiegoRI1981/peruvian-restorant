@@ -1,0 +1,28 @@
+.menu {
+  padding: 20px 20px;
+  background-color: #f9f9f9;
+}
+
+.menu h2 {
+  margin: 20px;
+}
+
+.menu-item {
+  display: flex;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.item-details {
+  flex: 1; /* Ocupa todo el espacio disponible en la columna izquierda */
+  text-align: left;
+}
+
+.item-price {
+  min-width: 80px; /* Ancho mínimo para el precio */
+  text-align: right; /* Alinea el precio a la derecha */
+  font-weight: bold;
+}
