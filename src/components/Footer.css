@@ -1,8 +1,8 @@
 .footer {
   position: fixed;
-  bottom: 0; /* Fija la Navbar en la parte superior */
-  left: 0; /* Asegura que la Navbar comience desde el borde izquierdo */
-  width: 100%; /* Ocupa todo el ancho disponible */
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #1e3a78;
   color: white;
   padding: 10px 0; 

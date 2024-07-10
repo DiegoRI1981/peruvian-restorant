@@ -1,10 +1,21 @@
 .menu {
-  padding: 20px 20px;
-  background-color: #f9f9f9;
+  padding: 10px 20px;
+  background-color:antiquewhite;
 }
 
-.menu h2 {
+.entrantes,
+.platosDeFondo {
   margin: 20px;
+}
+
+.menu h3 {
+  font-style: italic;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
 }
 
 .menu-item {
@@ -14,6 +25,9 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 5px;
+
+  flex-basis: calc(50% - 10px); /* Cada columna ocupa el 50% menos el margen */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
 }
 
 .item-details {
@@ -23,6 +37,13 @@
 
 .item-price {
   min-width: 80px; /* Ancho mínimo para el precio */
-  text-align: right; /* Alinea el precio a la derecha */
+  text-align: right; 
   font-weight: bold;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-item {
+    flex-basis: 100%; /* Cada columna ocupa el 100% en móviles */
+  }
 }

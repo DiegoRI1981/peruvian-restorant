@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Gallery = () => {
   // Configuración del carrusel
   const settings = {
-  //      dots: true,
+    //      dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -16,7 +16,7 @@ const Gallery = () => {
     autoplaySpeed: 2000, // Velocidad de avance en milisegundos
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1720,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -30,6 +30,7 @@ const Gallery = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
+          dots: true,
         },
       },
       {
@@ -47,29 +48,74 @@ const Gallery = () => {
       <h2>Galería de Nuestros Platos</h2>
       <div className="gallery-slider">
         <Slider {...settings}>
-        <div className="gallery-item">
-            <img src={`${process.env.PUBLIC_URL}/img/ajidegallina.jpeg`} alt="Plato 1" />
-          </div>
           <div className="gallery-item">
-            <img src={`${process.env.PUBLIC_URL}/img/ceviche.jpeg`} alt="Plato 2" />
+            <img
+              src={`${process.env.PUBLIC_URL}/img/ceviche.jpeg`}
+              alt="Plato 2"
+            />
           </div>
+
           <div className="gallery-item">
-            <img src={`${process.env.PUBLIC_URL}/img/anticuchos-peruanos.jpg`} alt="Plato 3" />
+            <img
+              src={`${process.env.PUBLIC_URL}/img/tiraditodeajiamarillo.jpeg`}
+              alt="Plato 6"
+            />
           </div>
+
           <div className="gallery-item">
-            <img src={`${process.env.PUBLIC_URL}/img/lomosaltado.jpeg`} alt="Plato 4" />
+            <img
+              src={`${process.env.PUBLIC_URL}/img/paparellena.jpeg`}
+              alt="Plato 2"
+            />
           </div>
+
           <div className="gallery-item">
-            <img src={`${process.env.PUBLIC_URL}/img/papaalahuancaina.jpg`} alt="Plato 5" />
+            <img
+              src={`${process.env.PUBLIC_URL}/img/anticuchos-peruanos.jpg`}
+              alt="Plato 3"
+            />
           </div>
+
           <div className="gallery-item">
-            <img src={`${process.env.PUBLIC_URL}/img/tiraditodeajiamarillo.jpeg`} alt="Plato 6" />
+            <img
+              src={`${process.env.PUBLIC_URL}/img/papaalahuancaina.jpg`}
+              alt="Plato 5"
+            />
           </div>
+
           <div className="gallery-item">
-            <img src={`${process.env.PUBLIC_URL}/img/plato7.jpg`} alt="Plato 7" />
+            <img
+              src={`${process.env.PUBLIC_URL}/img/causalimeña.jpeg`}
+              alt="Plato 2"
+            />
           </div>
+
           <div className="gallery-item">
-            <img src={`${process.env.PUBLIC_URL}/img/plato8.jpg`} alt="Plato 8" />
+            <img
+              src={`${process.env.PUBLIC_URL}/img/ajidegallina.jpeg`}
+              alt="Plato 1"
+            />
+          </div>
+
+          <div className="gallery-item">
+            <img
+              src={`${process.env.PUBLIC_URL}/img/lomosaltado.jpeg`}
+              alt="Plato 4"
+            />
+          </div>
+
+          <div className="gallery-item">
+            <img
+              src={`${process.env.PUBLIC_URL}/img/arrozchaufa.jpeg`}
+              alt="Plato 7"
+            />
+          </div>
+
+          <div className="gallery-item">
+            <img
+              src={`${process.env.PUBLIC_URL}/img/tacutacu.jpeg`}
+              alt="Plato 8"
+            />
           </div>
         </Slider>
       </div>
